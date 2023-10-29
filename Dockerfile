@@ -5,10 +5,10 @@ FROM python:3.8
 WORKDIR /app
 
 # Copy the Python script and any other necessary files
-COPY script.py /app/
+COPY app.py /app/
 
 # Install any Python dependencies
 RUN pip install -r requirements.txt
 
 # Command to run the Python script
-CMD ["python", "script.py"]
+CMD ["python", "app.py"]
